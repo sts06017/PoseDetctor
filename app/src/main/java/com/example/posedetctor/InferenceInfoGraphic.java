@@ -23,6 +23,7 @@ import android.graphics.Paint;
 import androidx.annotation.Nullable;
 
 /** Graphic instance for rendering inference info (latency, FPS, resolution) in an overlay view. */
+// 화면 좌상단 정보 표시
 public class InferenceInfoGraphic extends GraphicOverlay.Graphic {
 
   private static final int TEXT_COLOR = Color.WHITE;

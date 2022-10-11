@@ -303,11 +303,12 @@ object PreferenceUtils {
         return sharedPreferences.getBoolean(prefKey, true)
     }
 
+    // 랜드마크 위에 visibility on(true)/off(false)
     fun shouldShowPoseDetectionInFrameLikelihoodLivePreview(context: Context): Boolean {
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
         val prefKey =
             context.getString(R.string.pref_key_live_preview_pose_detector_show_in_frame_likelihood)
-        return sharedPreferences.getBoolean(prefKey, true)
+        return sharedPreferences.getBoolean(prefKey, false)
     }
 
     fun shouldShowPoseDetectionInFrameLikelihoodStillImage(context: Context): Boolean {
